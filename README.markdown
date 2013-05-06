@@ -15,6 +15,8 @@ and you'll see what I mean.
 To see the demo fail:
 -------------------------
 
+    git clone git@github.com:jayniz/neo4j-wrapper-testcase.git
+    cd neo4j-wrapper-testcase
     source .rvmrc
     gem install bundler
     bundle
