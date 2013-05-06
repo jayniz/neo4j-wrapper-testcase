@@ -3,12 +3,10 @@ Bundler.require
 
 class User
   include Neo4j::NodeMixin
-  rule(:all, :functions => Neo4j::Wrapper::Rule::Functions::Size.new)
 end
 
 class Movie
   include Neo4j::NodeMixin
-  rule(:all, :functions => Neo4j::Wrapper::Rule::Functions::Size.new)
 end
 
 class Like
