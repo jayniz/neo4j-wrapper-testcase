@@ -1,0 +1,8 @@
+rvm --create use jruby-1.6.7@sheldon
+export JRUBY_OPTS="$JRUBY_OPTS --1.9"
+
+# useful for the transformer in java 1.6
+# export JRUBY_OPTS='--1.9 -J-Xmx6g -J-Xms6g -J-XX:+UseConcMarkSweepGC -J-d64 -J-server -J-Djava.awt.headless=true'
+#
+# useful for the transformer in java 1.7
+# export JRUBY_OPTS='--1.9 -J-Xmx6g -J-Xms6g -J-XX:+UnlockExperimentalVMOptions -J-XX:+UseG1GC -J-d64 -J-server -J-Djava.awt.headless=true'
