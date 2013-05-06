@@ -8,6 +8,10 @@ then tries to do `from_node.rels(:outgoing, :type).to_other(other_node)`
 which fails. `from_node.rels(:outgoing, :type)` returns the 
 created connection just fine.
 
+Just look through
+[test.rb](https://github.com/jayniz/neo4j-wrapper-testcase/blob/master/test.rb)
+and you'll see what I mean.
+
 To see the demo fail:
 -------------------------
 
