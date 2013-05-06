@@ -2,7 +2,11 @@ Changed relationship behaviour:
 ===============================
 
 Upgrading from neo4j-wrapper/neo4j-core 2.2.0 to 2.2.1-2.2.3
-breaks Relationship.new. Here's a minimal test case.
+breaks the relationship lookup from one node to another node.
+This demo creates two nodes, a connection between them, and
+then tries to do `from_node.rels(:outgoing, :type).to_other(other_node)`
+which fails. `from_node.rels(:outgoing, :type)` returns the 
+created connection just fine.
 
 To see the demo fail:
 -------------------------
